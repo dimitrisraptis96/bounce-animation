@@ -1,12 +1,10 @@
 import React from "react";
-import Logo from "./Logo";
-
 import "./loading.css";
 
-function Loading() {
+function Loading({ logo }) {
   return (
     <div className="container">
-      <Logo className="logo" />
+      {React.cloneElement(logo, { className: "logo" })}
       <div className="shadow" />
     </div>
   );

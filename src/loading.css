@@ -3,6 +3,7 @@
   --logo-size: 48px;
   --offset: 100px;
   --shadow-height: 8px;
+  --duration: 0.5s;
 }
 
 html,
@@ -28,7 +29,7 @@ body {
   left: calc(50% - var(--logo-size) / 2);
 
   animation-name: bounce;
-  animation-duration: 0.5s;
+  animation-duration: var(--duration);
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
   animation-iteration-count: infinite;
@@ -50,7 +51,7 @@ body {
   left: calc(50% - var(--logo-size) / 2);
 
   animation-name: grow;
-  animation-duration: 0.5s;
+  animation-duration: var(--duration);
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
   animation-iteration-count: infinite;
